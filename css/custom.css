@@ -171,7 +171,7 @@ body{
         width: 100%;
         text-align: center;
         text-decoration: none;
-        color: #333;
+        color: black;
     }
     footer .back-to-top:hover{
         text-decoration: none;
@@ -190,7 +190,7 @@ body{
     footer ul#social li a{
 
      text-decoration: none;
-        color: #333;
+        color: black;
         font-size: 2rem;
     }
     footer ul#social li a:hover{
@@ -198,7 +198,7 @@ body{
         color: blue;
     }
     footer p{
-        color: #333;
+        color: black;
         text-align: right;
 
     }
