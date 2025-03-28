@@ -26,8 +26,8 @@
                 <div class="container">
                     <a class="navbar-brand" href="#home">
                         <img src="img/title.webp" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                        Sanup Khanal
-                      </a>
+                        Sanup Khanal 
+                    </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -40,177 +40,133 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#resume">Resume</a>
                       </li>
+                      
 
                     
                       
                       <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
+                        
+                  
                       </li>
+               
 
-                      <button onclick="openNewWindow()">War and Peace</button>
+                      <button onclick="openNewWindow()">Register your squad here</button>
 
                       <script>
                           function openNewWindow() {
                               let newWindow = window.open('', '_blank', 'width=3800,height=1200');
                               newWindow.document.write(`
-                          <!DOCTYPE html>
+                  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devastating Effects of War</title>
+    <title>Free Fire Squad Registration</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
+            background: #222;
+            color: white;
             text-align: center;
-            background-color: blanchedalmond;
         }
-        
-  
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
+     
+        .form-container {
+            width: 100%;
             padding: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-        .gallery img:hover {
-            transform: scale(1.1);
-        }
-        .popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            display: flex;
             justify-content: center;
-            align-items: center;
         }
-        .popup img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
+        .form-box {
+            background: #333;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        input, button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        input {
+            background: #444;
+            color: white;
+        }
+        button {
+            background: #ff5500;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ff7700;
+        }
+        .image-container img {
+            width: 90%;
+            
+            height: 50%;
+            border-radius: 19px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
-  
 <body>
+    <h1>Free Fire Squad Registration</h1>
 
-     
 
-
-    
-    <h1>Devastating Effects of War</h1>
-     
-    <div class="gallery">
-        <img src="img/pexels-ahmed-akacha-3313934-10629467.jpg" onclick="showPopup(this.src)">
-        <img src="img/pexels-ahmed-akacha-3313934-15803785.jpg" onclick="showPopup(this.src)">
-        <img src="img/pexels-davidpeinado-11796565 (1).jpg" onclick="showPopup(this.src)">
-        <img src="img/pexels-davidpeinado-11796565.jpg" onclick="showPopup(this.src)">
+    <div class="image-container">
+        <img src="img/i,ageform.jpg" alt="Free Fire Squad">
     </div>
 
-  
+    <div class="form-container">
+        <div class="form-box">
+           
+            <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Free Fire Squad Registration">
+                
+                <label for="squadName">Squad Name:</label>
+                <input type="text" id="squadName" name="Squad Name" required>
 
-  <h2><p id="tagline">**Introduction**</p></h2>
-    <h4><p>War has been a part of human history for centuries, leading to destruction, loss of life, and long-lasting impacts on societies. While some wars have been fought for independence, power, or resources, the consequences of war have always been devastating. This project explores the major effects of war on human life, economies, societies, and the environment.</p></h4>
-    
- <h2><p id="tagline"> **1. Loss of Human Lives**</p></h2>
-  <h4> <p> One of the most tragic consequences of war is the loss of human lives. Millions of soldiers and civilians perish during conflicts, leaving behind broken families and communities. The impact is not only immediate but also affects future generations due to trauma and loss of skilled labor.
-</p></h4>
-   <h2><p id="tagline"> **2. Economic Consequences**</p></h2> 
-  <h4> <p> War places a heavy burden on a nation’s economy. Countries spend vast amounts on military resources, which could have been used for development. Infrastructure such as roads, bridges, and industries are destroyed, disrupting trade and economic stability. The rebuilding process after war takes years and drains national resources.
-</p></h4>
-  <h2><p id="tagline">**3. Psychological and Emotional Trauma**</p>  </h2> 
-  <h4> <p>  War leaves deep emotional scars on those affected. Soldiers often suffer from Post-Traumatic Stress Disorder (PTSD), anxiety, and depression. Civilians, especially children, experience fear, loss, and grief that can affect their mental health for a lifetime.
-</p></h4>
-    <h2><p id="tagline">**4. Displacement and Refugee Crisis**</p> </h2>
-    <h4> <p>War forces millions of people to leave their homes, seeking safety in other regions or countries. Refugee crises put immense pressure on host nations, leading to overcrowding, poverty, and social tensions.
-</p></h4>
-    <h2><p id="tagline">**5. Environmental Destruction**</p></h2>
-    <h4> <p>Wars cause severe environmental damage through deforestation, air and water pollution, and destruction of ecosystems. The use of nuclear, chemical, and biological weapons has long-term effects on soil, water, and living beings.
-</p></h4>
-    <h2><p id="tagline">**6. Political and Social Instability**</p></h2> 
-    <h4> <p>Wars weaken governments, sometimes leading to dictatorships, civil unrest, or prolonged conflicts. Political instability makes it difficult for societies to recover, as divisions and resentment among groups continue to exist even after the war ends.
-</p></h4>
-    <h2><p id="tagline"> **Conclusion**</p> </h2> 
-    <h4><p>War disrupts food production and supply chains, causing famine and malnutrition. Poor sanitation and lack of medical care result in the spread of deadly diseases, further worsening the situation for affected populations.
+                <label for="leaderName">Squad Leader Name:</label>
+                <input type="text" id="leaderName" name="Leader Name" required>
 
-    
-    Although war is destructive, it has also led to advancements in technology and medicine. Some inventions made during wartime, such as antibiotics, radar, and space technology, have been beneficial for society in peacetime.
-    
-   
-    War has far-reaching consequences that affect individuals, nations, and the world as a whole. While conflicts may sometimes be unavoidable, efforts should always be made to resolve disputes peacefully. Promoting diplomacy, international cooperation, and understanding can help prevent wars and create a better future for humanity.
+                <label for="leaderID">Squad Leader Free Fire ID:</label>
+                <input type="text" id="leaderID" name="Leader Free Fire ID" required>
 
-</p></h4>
+                <label for="member1">Member 1 Free Fire ID:</label>
+                <input type="text" id="member1" name="Member 1 Free Fire ID" required>
 
+                <label for="member2">Member 2 Free Fire ID:</label>
+                <input type="text" id="member2" name="Member 2 Free Fire ID" required>
 
-    <h1>Effects of Peace</h1>
-    
-    <div class="gallery">
-        <img src="img/peace1 (1).jpg" onclick="showPopup(this.src)">
-        <img src="img/peace1 (1).png" onclick="showPopup(this.src)">
-        <img src="img/peace1 (2).png" onclick="showPopup(this.src)">
-        <img src="img/peace1 (3).png" onclick="showPopup(this.src)">
+                <label for="member3">Member 3 Free Fire ID:</label>
+                <input type="text" id="member3" name="Member 3 Free Fire ID" required>
+
+                <button type="submit">Register Squad</button>
+            </form>
+        </div>
     </div>
-
-
-    <h2><p id="tagline">**Introduction**</p></h2>
-    <h4><p>Peace is essential for the development and well-being of societies. When a country or the world experiences peace, it allows for growth, stability, and prosperity. Peace is not merely the absence of war but also the presence of harmony, justice, and sustainable progress. This project explores the major effects of peace on human life, economies, societies, and the environment.
-    </h4></p>
-
-   <h2><p id="tagline">**1. Economic Growth and Development**</p></h2> 
-    <h4><p> Peaceful nations experience strong economic growth as resources are directed towards development rather than military expenditures. Businesses thrive, trade flourishes, and investments increase, leading to job creation and improved living standards.
-    </p></h4>
-    <h2><p id="tagline">**2. Improved Quality of Life**</p></h2>
-    <h4> <p>In peaceful societies, people have access to better healthcare, education, and social services. Citizens can focus on personal and professional growth, leading to a higher standard of living and overall well-being.
-</p></h4>
-<h2><p id="tagline">**3. Social Harmony and Unity**</p></h2> 
-<h4> <p> Peace fosters social cohesion, bringing people together regardless of their cultural, religious, or ethnic backgrounds. When people coexist peacefully, societies become stronger, more inclusive, and tolerant of diversity.
-</p></h4>
-<h2><p id="tagline"> **4. Political Stability**</p></h2> 
-<h4><p> A peaceful nation enjoys stable governance, where leaders focus on policies that improve the lives of citizens rather than dealing with conflicts. Political stability leads to good governance, justice, and effective administration.
-</p></h4>
-<h2><p id="tagline"> **5. Advancement in Science and Technology**</p></h2>
-<h4> <p>In peaceful times, countries invest in scientific research and technological advancements. Medical breakthroughs, space exploration, and environmental solutions thrive in an environment free from war and destruction.
-</p></h4>
-<h2><p id="tagline"> **6. Environmental Protection**</p></h2> 
-<h4><p>War often leads to deforestation, pollution, and destruction of natural resources. In contrast, peace allows governments and organizations to focus on sustainability, conservation, and tackling climate change for a healthier planet.
-</p></h4>
-<h2><p id="tagline">**7. Cultural and Educational Growth**</p></h2>
-<h4> <p>Peace promotes the exchange of knowledge, arts, and culture. Students can pursue education without disruption, and creative industries flourish, leading to cultural enrichment and intellectual progress.
-</p></h4>
-<h2><p id="tagline"> **8. Reduction in Poverty and Inequality**</p></h2> 
-<h4> <p>Peaceful societies have better opportunities to address issues like poverty, hunger, and inequality. Governments can focus on social welfare programs, ensuring equal opportunities for all citizens.
-</p></h4>
-<h2><p id="tagline"> **9. Improved International Relations**</p></h2> 
-<h4> <p>Peace strengthens diplomatic relations between nations, leading to collaboration in trade, humanitarian aid, and global problem-solving. International cooperation fosters a more interconnected and supportive world.
-    </p></h4>
-    <h2><p id="tagline">**Conclusion**</p></h2>
-    <h4> <p>Peace is the foundation for prosperity, stability, and human progress. It allows societies to flourish in all aspects of life, from economic growth to cultural development. Promoting peace through education, dialogue, and mutual understanding is crucial for building a better future for all of humanity.
-</p></h4>
-
-
-
-   <h1>The end of war starts peace--</h1> 
-
-   
 
 </body>
 </html>
+
 
 
                               `);
                               newWindow.document.close();
                           }
                       </script>
+
+                      
 
                
                      
