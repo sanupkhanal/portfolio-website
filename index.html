@@ -34,9 +34,9 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                      <button onclick="openNewWindow()">Register your squad here</button>
+                     <li><a href="clave"><button onclick="openNewWindow()">Register your squad here</button></a> </li>
 
-                      <script>
+                      <script >
                           function openNewWindow() {
                               let newWindow = window.open('', '_blank', 'width=3800,height=1200');
                               newWindow.document.write(`
@@ -72,6 +72,7 @@
             max-width: 400px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            margin-top: -450px;
         }
         input, button {
             width: 90%;
@@ -99,6 +100,15 @@
             border-radius: 19px;
             box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
         }
+            .image-fund img{
+            width: 17%;
+            height: 4%;
+             border-radius: 9px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            margin-left: 80%;
+            text-decoration: none;
+            margin-top: 200px;
+      }
     </style>
 </head>
 <body>
@@ -108,11 +118,19 @@
     <div class="image-container">
         <img src="img/i,ageform.jpg" alt="Free Fire Squad">
     </div>
+    
+
+    <div class="image-fund">
+
+     <img src="img/esewa.jpeg" alt="Fund transfer">
+     </div>
 
     <div class="form-container">
+      
         <div class="form-box">
+          
            
-            <form action="https://formsubmit.co/khanalsanup780@gmail.com" method="POST">
+            <form action="https://formspree.io/f/xnnjowpw/khanalsanup780@gmail.com" method="POST">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="New Free Fire Squad Registration">
                 
@@ -160,23 +178,12 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#resume">Resume</a>
                       </li>
-                      
-
-                    
-                      
+                     
                       <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                         
-                  
                       </li>
                
-
-                     
-
-                      
-
-               
-                     
                     </ul>
                    
                   </div>
@@ -188,6 +195,71 @@
         <!-- home -->
         <section id="home">
           <div id="particles-js"></div> <!-- Particles background -->
+          <script>
+            // Function to create and show the popup
+            function showPopup() {
+                // Create popup container
+                let popup = document.createElement("div");
+                popup.style.position = "fixed";
+                popup.style.bottom = "20px";  // Adjust position
+                popup.style.right = "20px";
+                popup.style.width = "250px";  // Adjust size
+                popup.style.background = "rgba(255, 255, 255, 0.2)"; // Transparent effect
+                popup.style.padding = "10px";
+                popup.style.borderRadius = "10px";
+                popup.style.backdropFilter = "blur(5px)"; // Blur effect
+                popup.style.cursor = "pointer";
+                popup.style.zIndex = "999";
+    
+                // Create image
+                let img = document.createElement("img");
+                img.src = "img/i,ageform.jpg";  // Change this to your image path
+                img.alt = "Go to another page";
+                img.style.width = "100%";
+                img.style.opacity = "0.8";  // Slightly transparent
+                img.style.transition = "opacity 0.3s";
+    
+                // Add hover effect
+                img.onmouseover = function() {
+                    img.style.opacity = "1";
+                };
+                img.onmouseout = function() {
+                    img.style.opacity = "0.8";
+                };
+    
+                // Redirect on click
+                popup.onclick = function() {
+                    window.location.href = "#clave"; // Change this to your page URL
+                };
+    
+                // Create close button
+                let closeBtn = document.createElement("span");
+                closeBtn.innerHTML = "×";
+                closeBtn.style.position = "absolute";
+                closeBtn.style.top = "5px";
+                closeBtn.style.right = "10px";
+                closeBtn.style.fontSize = "16px";
+                closeBtn.style.cursor = "pointer";
+                closeBtn.style.color = "white";
+                closeBtn.style.background = "red";
+                closeBtn.style.padding = "2px 6px";
+                closeBtn.style.borderRadius = "50%";
+    
+                // Close popup on click
+                closeBtn.onclick = function(event) {
+                    event.stopPropagation(); // Prevent redirect when closing
+                    popup.remove();
+                };
+    
+                // Append elements
+                popup.appendChild(closeBtn);
+                popup.appendChild(img);
+                document.body.appendChild(popup);
+            }
+    
+            // Show popup when the page loads
+            window.onload = showPopup;
+        </script>
           <div class="container">
               <div class="row">
                   <div class="col-md-12 d-flex flex-column align-items-center text-center">
@@ -250,11 +322,6 @@
             </div>
           </div>
         </section>
-
-
-
-
-
 
          <!-- contact -->
          <section id="contact">
@@ -326,10 +393,6 @@
          </footer>
 
 
-
-
-
-    
          <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/smooth-scroll.js"></script>
