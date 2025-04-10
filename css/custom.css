@@ -17,7 +17,13 @@ body{
     font-size: 1.2rem;
 }
 
+
 /* home */
+.options {
+    display: none;
+    margin-top: 10px;
+}
+
 #home{
     width: 100%;
     min-height: 100vh;

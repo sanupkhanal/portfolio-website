@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3795509992338224"
-      crossorigin="anonymous"></script>
+    <head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3795509992338224"
+      crossorigin="anonymous">
+    </script>
         <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
            
@@ -26,8 +28,8 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top py-3">
                 <div class="container">
                     <a class="navbar-brand" href="#home">
-                        <img src="img/i,ageform.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                        Tap 3 lines for registration.
+                        <img src="img/title.webp" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Sanup Khanal
                     </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,136 +37,42 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                      <button onclick="openNewWindow()">Register your squad here</button>
+                     <li class="nav-item">
+                      <a class="nav-link" onclick="openNewWindow()"  href="#notes">Notes</a>
+                     </li>
 
                       <script>
                           function openNewWindow() {
                               let newWindow = window.open('', '_blank', 'width=3800,height=1200');
                               newWindow.document.write(`
-                  <!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Fire Squad Registration</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background: #222;
-            color: white;
-            text-align: center;
-        }
-     
-        .form-container {
-            width: 100%;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-        }
-        .form-box {
-            background: #333;
-            padding: 20px;
-            width: 90%;
-            max-width: 400px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-           
-        }
-        input, button {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: none;
-        }
-        input {
-            background: #444;
-            color: white;
-        }
-        button {
-            background: #ff5500;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #ff7700;
-        }
-        .image-container img {
-            width: 90%;
-            
-            height: 50%;
-            border-radius: 19px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-        }
-            .image-fund img{
-            width: 17%;
-            height: 4%;
-             border-radius: 9px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-            margin-left: 80%;
-            text-decoration: none;
-            margin-top: -10px;
-      }
-    </style>
-</head>
-<body>
-    <h1>Free Fire Squad Registration</h1>
+                              <html>
+                              <head><title>Notes</title></head>
+                              <body>
+                                <header>
+                               <u><i> <h1> Select Your Class </h1></i></u>
+                                  </header>
+                                   <h3><li class="notes">
+                                    <a class="note-item"  onclick="openNewWindow()"href="#class 8">Class 8</a>
+                                    </li></h3>
 
 
-    <div class="image-container">
-        <img src="img/i,ageform.jpg" alt="Free Fire Squad">
-    </div>
-    
+                                     <h3><li class="notes">
+                                    <a class="note-item" href="#class 9">Class 9</a>
+                                    </li></h3>
 
-  
+                                   <h3><li class="notes">
+                                    <a class="note-item" href="#class 10">Class 10</a>
+                                    </li></h3>
+                                  
+                                  <h3><li class="notes">
+                                    <a class="note-item" href="#class 11">Class 11</a>
+                                    </li></h3>
 
-    <div class="form-container">
-      
-        <div class="form-box">
-          
-             <form action="https://formspree.io/f/xnnjowpw" method="POST">
-                
-                <input type="hidden" name="_subject" value="New Free Fire Squad Registration">
-                
-                <label for="squadName">Squad Name:</label>
-                <input type="text" id="squadName" name="Squad Name" required>
-
-                <label for="leaderName">Squad Leader Name:</label>
-                <input type="text" id="leaderName" name="Leader Name" required>
-
-                <label for="leaderID">Squad Leader Free Fire ID:</label>
-                <input type="text" id="leaderID" name="Leader Free Fire ID" required>
-
-                <label for="member1">Member 1 Free Fire ID:</label>
-                <input type="text" id="member1" name="Member 1 Free Fire ID" required>
-
-                <label for="member2">Member 2 Free Fire ID:</label>
-                <input type="text" id="member2" name="Member 2 Free Fire ID" required>
-
-                <label for="member3">Member 3 Free Fire ID:</label>
-                <input type="text" id="member3" name="Member 3 Free Fire ID" required>
-
-                <button type="submit">Register Squad</button>
-            </form>
-        </div>
-    </div>
-    <h1>Payment method::</h1>
-      <div class="image-fund">
-
-     <img src="img/esewa.jpeg" alt="Fund transfer">
-     </div>
-    
-
-</body>
-</html>
-
-
+                                     <h3><li class="notes">
+                                    <a class="note-item" href="#class 12">Class 12</a>
+                                    </li></h3>
+                                </body>
+                                <html>
 
                               `);
                               newWindow.document.close();
