@@ -52,6 +52,8 @@
                       </li>
                
                     </ul>
+                               <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="btn btn-outline-secondary">Switch Theme</button>
                    
                   </div>
                 </div>
@@ -194,6 +196,19 @@
 
          </footer>
 
+         <script>
+
+          // filepath: c:\Users\SANUP\Desktop\Sanup\js\theme-toggle.js
+          document.getElementById('theme-toggle').addEventListener('click', function () {
+              document.body.classList.toggle('dark-theme');
+              const navbar = document.querySelector('.navbar');
+              const cards = document.querySelectorAll('.card');
+          
+              navbar.classList.toggle('dark-theme');
+              cards.forEach(card => card.classList.toggle('dark-theme'));
+          });
+          </script>
+
 
          <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -201,6 +216,7 @@
         <script type="text/javascript" src="js/wow.js"></script>
         <script type="text/javascript" src="js/particles.js"></script>
    <script type="text/javascript" src="js/app.js"></script>
+   <script src="js/theme-toggle.js"></script>
 
 
     </body>

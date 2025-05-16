@@ -211,3 +211,36 @@ body{
     footer p:hover{
        color: blue;
     }
+    /* Add this at the bottom of the file */
+
+/* Default Light Theme */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar {
+    background-color: #e8edfc;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ddd;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar.dark-theme {
+    background-color: #1f1f1f;
+}
+
+.card.dark-theme {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid #333;
+}
