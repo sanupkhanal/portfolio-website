@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* common CSS */
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", serif;
+}
+
+/* header */
+
+.navbar-brand{
+    font-size: 1.5rem;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+
+
+/* home */
+.options {
+    display: none;
+    margin-top: 10px;
+}
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Keep it behind content */
+    color: aqua;
+    background-color: black;
+}
+
+
+
+#name{
+    margin-top: 16rem;
+    font-size: 4rem;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+ 
+}
+#tagline{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    z-index: 1;
+}
+
+#learn-more{
+    padding: .4rem 1rem;
+    max-width: 10rem;
+    color: red;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid black;
+    border-radius: 1rem;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1;
+    border-color: white;
+}
+#learn-more:hover{
+    background: white;
+    z-index: 1;
+}
+/* resume */
+
+
+#resume{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+#resume.card{
+    margin-left: auto;
+    margin-right: auto;
+}
+#resume.card img{
+    height: 150px;
+}
+
+/* portfolio */
+
+#portfolio{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+#protfolio img{
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+
+}
+#portfolio .grid{
+    position: relative;
+    width: 100%;
+}
+#portfolio .grid .overlay{
+    position: absolute;
+    margin-top: 30px;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    width: 113%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: blue;
+}
+
+#portfolio .grid:hover .overlay{
+    opacity: 1;
+}
+.text{
+    color: #fff;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+
+    }
+    /* contact */
+    #contact{
+        width: 100%;
+        height: auto;
+        padding: 4rem 0;
+    }
+    #contact form{
+        width: 100%;
+
+    }
+    #contact form input,
+    #contact form textarea{
+        background: #e8edfc;
+
+    }
+    #contact form .submit-message{
+        margin-left: 15px;
+        margin-right: 15px;
+        background: blue;
+        color:#fff
+        
+    }
+
+    /* footer */
+   footer{
+        width: 100%;
+        height: auto;
+        background: #e8edfc;
+        padding: 2rem 0 4rem;
+
+    }
+
+    footer ul{
+        list-style: none;
+        padding-left: 0;
+    }
+
+    footer .back-to-top{
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+    footer .back-to-top:hover{
+        text-decoration: none;
+        color: blue;
+
+    }
+    footer ul#social li{
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    footer ul#social{
+        list-style: none;
+        padding-left: 0;
+        text-align: right;
+    }
+    footer ul#social li a{
+
+     text-decoration: none;
+        color: black;
+        font-size: 2rem;
+    }
+    footer ul#social li a:hover{
+        text-decoration: none;
+        color: blue;
+    }
+    footer p{
+        color: black;
+        text-align: right;
+
+    }
+    footer p:hover{
+       color: blue;
+    }
+    /* Add this at the bottom of the file */
+
+/* Default Light Theme */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar {
+    background-color: #e8edfc;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ddd;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar.dark-theme {
+    background-color: #1f1f1f;
+}
+
+.card.dark-theme {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid #333;
+}
