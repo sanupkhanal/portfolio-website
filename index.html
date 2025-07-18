@@ -52,42 +52,7 @@
                        <button onclick="openNewWindow()">Note</button>
 </ul>
 
-                        <script>
-        function openNewWindow() {
-            let newWindow = window.open('', '_blank', 'width=1500,height=800');
-
-            newWindow.document.write(`
-
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                  
-                    <style>
-                        body {
-                            font-family: Arial, sans-serif;
-                            padding: 20px;
-                        }
-                        .pdf-container {
-                            text-align: center;
-                        }
-                        .pdf-container iframe {
-                            width: 100%;
-                            height: 100vh;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <div class="container pdf-container">
-                        
-                        <iframe src="ewe.pdf"></iframe>
-                    </div>
-                </body>
-                </html>
-
-              `);
-            newWindow.document.close();
-        }
-    </script>
+       
 
                
                     
